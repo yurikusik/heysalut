@@ -12,7 +12,8 @@ export async function GET() {
     await client.connect();
     await client.close();
     return NextResponse.json({ message: 'Successfully connected to MongoDB!' });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+  } catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
+    return NextResponse.json({ error: errorMessage }, { status: 500 });
   }
 } 

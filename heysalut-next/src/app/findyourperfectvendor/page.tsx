@@ -6,11 +6,50 @@ import VendorCard from "../components/VendorCard";
 import Pagination from "../components/Pagination";
 import { useEffect, useState, useCallback } from "react";
 
+interface Language {
+  name: string;
+}
+
+interface Brand {
+  name: string;
+}
+
+interface Dealership {
+  name: string;
+}
+
+interface Coordinates {
+  lat: number;
+  lng: number;
+}
+
+interface Vendor {
+  _id: string;
+  dealership?: Dealership;
+  title: string;
+  profileImage?: string;
+  image?: string;
+  boosted?: boolean;
+  location?: string;
+  coordinates?: Coordinates;
+  languages?: Language[];
+  brands?: Brand[];
+  rating?: number;
+}
+
+interface Filters {
+  search: string;
+  language: string;
+  brand: string;
+  rating: string;
+  locationRange: string;
+}
+
 export default function FindYourPerfectVendorPage() {
-  const [vendors, setVendors] = useState<any[]>([]);
-  const [filteredVendors, setFilteredVendors] = useState<any[]>([]);
+  const [vendors, setVendors] = useState<Vendor[]>([]);
+  const [filteredVendors, setFilteredVendors] = useState<Vendor[]>([]);
   const [loading, setLoading] = useState(true);
-  const [filters, setFilters] = useState({
+  const [filters, setFilters] = useState<Filters>({
     search: "",
     language: "",
     brand: "",
@@ -28,7 +67,7 @@ export default function FindYourPerfectVendorPage() {
       });
   }, []);
 
-  const handleFiltersChange = useCallback((newFilters: any) => {
+  const handleFiltersChange = useCallback((newFilters: Filters) => {
     setFilters(newFilters);
   }, []);
 
@@ -49,8 +88,8 @@ export default function FindYourPerfectVendorPage() {
     if (filters.language) {
       filtered = filtered.filter((vendor) => {
         const vendorLanguages = vendor.languages || [];
-        return vendorLanguages.some((lang: any) => 
-          lang.name === filters.language || lang === filters.language
+        return vendorLanguages.some((lang: Language) => 
+          lang.name === filters.language
         );
       });
     }
@@ -59,8 +98,8 @@ export default function FindYourPerfectVendorPage() {
     if (filters.brand) {
       filtered = filtered.filter((vendor) => {
         const vendorBrands = vendor.brands || [];
-        return vendorBrands.some((brand: any) => 
-          brand.name === filters.brand || brand === filters.brand
+        return vendorBrands.some((brand: Brand) => 
+          brand.name === filters.brand
         );
       });
     }
@@ -76,7 +115,6 @@ export default function FindYourPerfectVendorPage() {
 
     // Location range filter (if vendor has coordinates)
     if (filters.locationRange) {
-      const maxDistance = parseFloat(filters.locationRange);
       // For now, we'll just filter by vendors that have location data
       // In a real implementation, you'd calculate distance from user's location
       filtered = filtered.filter((vendor) => {

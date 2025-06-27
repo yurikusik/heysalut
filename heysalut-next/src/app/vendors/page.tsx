@@ -34,7 +34,7 @@ function VendorsFeatures() {
           Why AutoConnect is the Right Choice for Your Dealership
         </h1>
         <p className="text-[#141414] text-base font-normal leading-normal max-w-[720px]">
-          AutoConnect provides a comprehensive suite of tools and resources designed to help you succeed in today's competitive market.
+          AutoConnect provides a comprehensive suite of tools and resources designed to help you succeed in today&apos;s competitive market.
         </p>
       </div>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
@@ -141,7 +141,7 @@ function VendorsSuccessStories() {
             <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"></div>
             <div>
               <p className="text-[#141414] text-base font-medium leading-normal">
-                "AutoConnect has transformed our sales process. We're reaching more qualified leads and closing deals faster than ever before."
+                &quot;AutoConnect has transformed our sales process. We&apos;re reaching more qualified leads and closing deals faster than ever before.&quot;
               </p>
               <p className="text-[#757575] text-sm font-normal leading-normal">- Michael Chen, Sales Manager at City Motors</p>
             </div>
@@ -151,7 +151,7 @@ function VendorsSuccessStories() {
             <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"></div>
             <div>
               <p className="text-[#141414] text-base font-medium leading-normal">
-                "The platform's intuitive interface and powerful features have made it easy for us to manage our inventory and connect with potential buyers."
+                &quot;The platform&apos;s intuitive interface and powerful features have made it easy for us to manage our inventory and connect with potential buyers.&quot;
               </p>
               <p className="text-[#757575] text-sm font-normal leading-normal">- Sarah Lee, Owner of Premier Auto Group</p>
             </div>
@@ -161,7 +161,7 @@ function VendorsSuccessStories() {
             <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"></div>
             <div>
               <p className="text-[#141414] text-base font-medium leading-normal">
-                "We've seen a significant increase in sales since joining AutoConnect. It's an essential tool for any dealership looking to grow."
+                &quot;We&apos;ve seen a significant increase in sales since joining AutoConnect. It&apos;s an essential tool for any dealership looking to grow.&quot;
               </p>
               <p className="text-[#757575] text-sm font-normal leading-normal">- David Rodriguez, General Manager at Elite Cars</p>
             </div>
