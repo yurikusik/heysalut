@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 
 export default function LoginModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   if (!open) return null;
@@ -8,7 +7,7 @@ export default function LoginModal({ open, onClose }: { open: boolean; onClose: 
       <div className="bg-white rounded-xl shadow-lg w-full max-w-md mx-4 relative">
         <button onClick={onClose} className="absolute top-3 right-3 text-[#1978e5] text-2xl font-bold">×</button>
         <div className="flex flex-col w-full py-5">
-          <h2 className="text-[#0e141b] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Welcome to AutoConnect</h2>
+          <h2 className="text-[#0e141b] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Welcome to HeySalut</h2>
           <p className="text-[#0e141b] text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">Connect with potential car buyers and boost your sales.</p>
           <div className="flex justify-center">
             <div className="flex flex-1 gap-3 max-w-[480px] flex-col items-stretch px-4 py-3">
@@ -40,7 +39,7 @@ export default function LoginModal({ open, onClose }: { open: boolean; onClose: 
               <span className="truncate">Login</span>
             </button>
           </div>
-          <p className="text-[#4e7097] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline cursor-pointer">Don't have an account? Sign up</p>
+          <p className="text-[#4e7097] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline cursor-pointer">Don&apos;t have an account? Sign up</p>
         </div>
       </div>
     </div>

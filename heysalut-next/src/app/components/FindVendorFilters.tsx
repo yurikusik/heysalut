@@ -1,6 +1,16 @@
 "use client";
 import { useEffect, useState } from "react";
 
+interface Language {
+  _id: string;
+  name: string;
+}
+
+interface Brand {
+  _id: string;
+  name: string;
+}
+
 interface FilterProps {
   onFiltersChange: (filters: {
     search: string;
@@ -12,10 +22,8 @@ interface FilterProps {
 }
 
 export default function FindVendorFilters({ onFiltersChange }: FilterProps) {
-  const [languages, setLanguages] = useState([]);
-  const [brands, setBrands] = useState([]);
-  const [loadingLang, setLoadingLang] = useState(true);
-  const [loadingBrand, setLoadingBrand] = useState(true);
+  const [languages, setLanguages] = useState<Language[]>([]);
+  const [brands, setBrands] = useState<Brand[]>([]);
   const [search, setSearch] = useState("");
   const [language, setLanguage] = useState("");
   const [brand, setBrand] = useState("");
@@ -29,13 +37,11 @@ export default function FindVendorFilters({ onFiltersChange }: FilterProps) {
       .then((res) => res.json())
       .then((data) => {
         setLanguages(data);
-        setLoadingLang(false);
       });
     fetch("/api/carBrands")
       .then((res) => res.json())
       .then((data) => {
         setBrands(data);
-        setLoadingBrand(false);
       });
   }, []);
 
@@ -76,7 +82,7 @@ export default function FindVendorFilters({ onFiltersChange }: FilterProps) {
           onChange={(e) => setLanguage(e.target.value)}
         >
           <option value="">Language</option>
-          {languages.map((lang: any) => (
+          {languages.map((lang: Language) => (
             <option key={lang._id} value={lang.name}>{lang.name}</option>
           ))}
         </select>
@@ -87,7 +93,7 @@ export default function FindVendorFilters({ onFiltersChange }: FilterProps) {
           onChange={(e) => setBrand(e.target.value)}
         >
           <option value="">Brand</option>
-          {brands.map((brand: any) => (
+          {brands.map((brand: Brand) => (
             <option key={brand._id} value={brand.name}>{brand.name}</option>
           ))}
         </select>

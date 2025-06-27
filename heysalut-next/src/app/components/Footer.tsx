@@ -34,7 +34,7 @@ export default function Footer() {
               </div>
             </a>
           </div>
-          <p className="text-[#757575] text-base font-normal leading-normal">@2024 AutoConnect. All rights reserved.</p>
+          <p className="text-[#757575] text-base font-normal leading-normal">@2024 HeySalut. All rights reserved.</p>
         </footer>
       </div>
     </footer>

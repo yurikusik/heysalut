@@ -10,7 +10,7 @@ export default function Header() {
           <div className="size-4">
             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path></svg>
           </div>
-          <Link href="/" className="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em]">AutoConnect</Link>
+          <Link href="/" className="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em]">HeySalut</Link>
         </div>
         <div className="flex items-center gap-9">
           <Link className="text-[#141414] text-sm font-medium leading-normal" href="/">Home</Link>

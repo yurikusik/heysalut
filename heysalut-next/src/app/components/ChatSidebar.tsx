@@ -41,7 +41,7 @@ export default function ChatSidebar() {
           </div>
         </label>
       </div>
-      {users.map((user, idx) => (
+      {users.map((user) => (
         <div key={user.name} className="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
           <div className="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit" style={{ backgroundImage: `url('${user.avatar}')` }}></div>
           <div className="flex flex-col justify-center">

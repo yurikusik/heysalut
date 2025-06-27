@@ -11,7 +11,7 @@ function BuyersHero() {
         >
           <div className="flex flex-col gap-2 text-left">
             <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
-              Find Your Perfect Car with AutoConnect
+              Find Your Perfect Car with HeySalut
             </h1>
             <h2 className="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
               Discover a seamless car-buying experience. Request quotes, compare options, and connect with trusted sellers, all in one place.
@@ -29,7 +29,7 @@ function BuyersHero() {
 function BuyersHowItWorks() {
   return (
     <>
-      <h2 className="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">How AutoConnect Works for Buyers</h2>
+      <h2 className="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">How HeySalut Works for Buyers</h2>
       <div className="grid grid-cols-[40px_1fr] gap-x-2 px-4">
         {/* Step 1 */}
         <div className="flex flex-col items-center gap-1 pt-3">
@@ -82,7 +82,7 @@ function BuyersHowItWorks() {
 function BuyersFeatures() {
   return (
     <>
-      <h2 className="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Why Choose AutoConnect?</h2>
+      <h2 className="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Why Choose HeySalut?</h2>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
         <div className="flex flex-1 gap-3 rounded-lg border border-[#e0e0e0] bg-white p-4 items-center">
           <div className="text-[#141414]">

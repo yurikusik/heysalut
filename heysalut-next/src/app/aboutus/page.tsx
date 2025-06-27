@@ -5,10 +5,10 @@ function AboutIntro() {
   return (
     <>
       <div className="flex flex-wrap justify-between gap-3 p-4">
-        <p className="text-[#141414] tracking-light text-[32px] font-bold leading-tight min-w-72">About AutoConnect</p>
+        <p className="text-[#141414] tracking-light text-[32px] font-bold leading-tight min-w-72">About HeySalut</p>
       </div>
       <p className="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">
-        AutoConnect is a leading platform dedicated to empowering car sales professionals with the tools and resources they need to succeed in today's competitive market. Our
+        HeySalut is a leading platform dedicated to empowering car sales professionals with the tools and resources they need to succeed in today&apos;s competitive market. Our
         mission is to bridge the gap between vendors and potential clients, fostering meaningful connections that drive sales and build lasting relationships.
       </p>
     </>
@@ -20,7 +20,7 @@ function AboutMission() {
     <>
       <h2 className="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Mission</h2>
       <p className="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">
-        At AutoConnect, we believe that every car sales vendor deserves the opportunity to thrive. We are committed to providing innovative solutions that streamline the
+        At HeySalut, we believe that every car sales vendor deserves the opportunity to thrive. We are committed to providing innovative solutions that streamline the
         sales process, enhance client engagement, and ultimately increase revenue. Our platform is designed to be user-friendly, intuitive, and adaptable to the unique needs
         of each vendor.
       </p>
@@ -82,8 +82,8 @@ function AboutContact() {
     <>
       <h2 className="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact Us</h2>
       <p className="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">
-        We'd love to hear from you! If you have any questions, feedback, or inquiries, please don't hesitate to reach out. You can contact us via email at
-        support@autoconnect.com or call us at (555) 123-4567. Follow us on social media for the latest updates and industry insights.
+        We&apos;d love to hear from you! If you have any questions, feedback, or inquiries, please don&apos;t hesitate to reach out. You can contact us via email at
+        support@HeySalut.com or call us at (555) 123-4567. Follow us on social media for the latest updates and industry insights.
       </p>
       <div className="@container">
         <div className="gap-2 px-4 flex flex-wrap justify-start">
