@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 
 export default function LoginModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   if (!open) return null;
@@ -39,7 +40,7 @@ export default function LoginModal({ open, onClose }: { open: boolean; onClose: 
               <span className="truncate">Login</span>
             </button>
           </div>
-          <p className="text-[#4e7097] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline cursor-pointer">Don&apos;t have an account? Sign up</p>
+          <p className="text-[#4e7097] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline cursor-pointer">Don't have an account? Sign up</p>
         </div>
       </div>
     </div>
