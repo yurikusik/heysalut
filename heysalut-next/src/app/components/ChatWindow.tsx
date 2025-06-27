@@ -39,7 +39,7 @@ const messages = [
 
 export default function ChatWindow() {
   return (
-    <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
+    <section className="flex flex-col w-full max-w-full md:max-w-2xl lg:max-w-3xl xl:max-w-4xl flex-1 bg-white h-full">
       <div className="flex flex-wrap justify-between gap-3 p-4"><p className="text-[#0e141b] tracking-light text-[32px] font-bold leading-tight min-w-72">Ethan Carter</p></div>
       <h3 className="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Today</h3>
       {messages.filter(m => m.date === "Today").map((m, i) => (
@@ -95,6 +95,6 @@ export default function ChatWindow() {
           </div>
         </label>
       </div>
-    </div>
+    </section>
   );
 } 

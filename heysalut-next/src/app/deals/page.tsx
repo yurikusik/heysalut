@@ -116,10 +116,10 @@ function DealCard({ image, title, desc, poster, comments }: DealCardProps) {
 export default function DealsPage() {
   return (
     <div className="relative flex min-h-screen flex-col bg-white group/design-root overflow-x-hidden">
-      <div className="layout-container flex h-full grow flex-col">
+      <div className="flex h-full grow flex-col">
         <Header />
-        <div className="px-40 flex flex-1 justify-center py-5">
-          <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5 w-full">
+          <div className="flex flex-col w-full max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-[960px] flex-1">
             <DealsFeed />
           </div>
         </div>

@@ -26,9 +26,9 @@ const users = [
   },
 ];
 
-export default function ChatSidebar() {
+export default function ChatSidebar({ open }: { open?: boolean }) {
   return (
-    <div className="layout-content-container flex flex-col w-80">
+    <aside className={`bg-white flex flex-col w-full sm:w-64 md:w-80 max-w-full sm:max-w-xs md:max-w-xs h-full border-r border-[#f2f2f2] z-30 ${open === false ? 'hidden' : ''}`}>
       <div className="px-4 py-3">
         <label className="flex flex-col min-w-40 h-12 w-full">
           <div className="flex w-full flex-1 items-stretch rounded-lg h-full">
@@ -50,6 +50,6 @@ export default function ChatSidebar() {
           </div>
         </div>
       ))}
-    </div>
+    </aside>
   );
 } 
